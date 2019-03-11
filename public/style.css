@@ -1,0 +1,46 @@
+body {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#table {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #222;
+    text-align: center;
+    /* Webkit (Chrome and Safari) */
+    background: -webkit-gradient(linear, top, bottom, color-stop(15%, white), color-stop(80%, darkgray), );
+    /* Mozilla */
+    background: -moz-linear-gradient(top, white 15%, darkgray 90%);
+    /* Internet Explorer */
+    background: linear-gradient(90deg, white 15%, darkgray 90%);
+    color: #000;
+    cursor: pointer;
+}
+
+.blank {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+#moves {
+    border: 2px solid #222;
+    /* Webkit (Chrome and Safari) */
+    background: -webkit-gradient(linear, top, bottom, color-stop(15%, white), color-stop(80%, darkgray), );
+    /* Mozilla */
+    background: -moz-linear-gradient(top, white 15%, darkgray 90%);
+    /* Internet Explorer */
+    background: linear-gradient(90deg, white 15%, darkgray 90%);
+    font-weight: bold;
+    padding: 2px 5px;
+    color: #000;
+}

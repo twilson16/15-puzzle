@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD_rfbgtsIJ9Mwf2JFfjTlDfIcURLqOPoI",
+    // authDomain: "puzzle-93f0a.firebaseapp.com",
+    databaseURL: "https://puzzle-93f0a.firebaseio.com",
+    projectId: "puzzle-93f0a",
+    storageBucket: "puzzle-93f0a.appspot.com",
+    messagingSenderId: "431503955821"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="script.js" ></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <title>15 Puzzle</title>
+</head>
+<body>
+    <h1>15 Puzzle</h1>
+      <table id="table"></table>
+      <br>
+      <br>
+      <label for="rows"> Rows <input type="text" name="rows" id="rows" value="4" size="2"></label> 
+      
+      <label for="columns"> Columns       <input type="text" name="columns" id="columns" value="4" size="2"></label> 
+
+      <button id="newGame"> Start New Game </button>
+      <br>
+      <br>
+      <div>
+      <span>Number of Moves:</span> <span id="moves">0</span>
+    </div>
+</body>
+
+</html>
